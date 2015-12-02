@@ -4,4 +4,5 @@
 
 FROM	tsuru/python
 ENV     http_proxy="http://dextra2:12345678@10.52.132.3:8080/"
+ENV     no_proxy=10.52.139.51,localhost
 RUN     echo 'Acquire::http::Proxy "http://dextra2:12345678@10.52.132.3:8080/";' >/etc/apt/apt.conf.d/01Proxy
