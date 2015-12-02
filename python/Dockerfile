@@ -5,4 +5,5 @@
 FROM	tsuru/base-platform
 ADD	. /var/lib/tsuru/python
 RUN	cp /var/lib/tsuru/python/deploy /var/lib/tsuru
+RUN     echo "Acquire::http::Proxy 'http://dextra2:12345678@10.52.132.3:8080/'" > /etc/apt/apt.conf.d/01Proxy
 RUN	/var/lib/tsuru/python/install
