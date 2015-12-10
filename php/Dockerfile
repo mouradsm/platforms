@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-FROM    tsuru/base-platform
+FROM    tsuru/php
 
 ENV     http_proxy="http://dextra2:12345678@10.52.132.3:8080/"
 ENV     https_proxy="http://dextra2:12345678@10.52.132.3:8080/"
